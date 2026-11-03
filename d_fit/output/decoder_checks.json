@@ -1,0 +1,5 @@
+{
+  "viterbi_matches_exhaustive": true,
+  "posterior_max_error": 2.220446049250313e-16,
+  "one_to_one_boundary_matching": true
+}

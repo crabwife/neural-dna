@@ -1,0 +1,60 @@
+{
+  "seed": 63,
+  "blocks": 24,
+  "width": 24,
+  "classes": 10,
+  "batch": 96,
+  "root_steps": 600,
+  "family_steps": 180,
+  "reference_steps": 50,
+  "donor_steps": 50,
+  "root_lr": 0.003,
+  "branch_lr": 0.0015,
+  "finetune_lr": 0.0015,
+  "known_sources": 3,
+  "all_sources": 4,
+  "references_per_source": 3,
+  "finetune_steps": [
+    0,
+    25,
+    100,
+    300
+  ],
+  "marker_counts": [
+    1,
+    4,
+    16,
+    64,
+    600
+  ],
+  "lambda_grid": [
+    0,
+    0.05,
+    0.2,
+    0.5,
+    1,
+    2,
+    4
+  ],
+  "temperature_grid": [
+    0.025,
+    0.05,
+    0.1,
+    0.25,
+    0.5,
+    1,
+    2,
+    4
+  ],
+  "calibration_long": 12,
+  "calibration_short": 6,
+  "test_long": 24,
+  "test_short": 12,
+  "test_single": 8,
+  "test_missing": 12,
+  "mean_long_tract": 4,
+  "mean_short_tract": 1.5,
+  "bootstrap_replicates": 2000,
+  "rejection_quantile": 0.99,
+  "permuted_mosaics": 6
+}
