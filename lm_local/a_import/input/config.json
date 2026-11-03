@@ -1,0 +1,66 @@
+{
+  "seed": 63,
+  "model_id": "HuggingFaceTB/SmolLM2-135M",
+  "revision": "93efa2f097d58c2a74874c7e644dbc9b0cee75a2",
+  "corpus_url": "https://raw.githubusercontent.com/karpathy/char-rnn/370cbcd448eb7daf32f21a6be560b70e0b33c4e3/data/tinyshakespeare/input.txt",
+  "sources": 2,
+  "references_per_source": 1,
+  "marker_counts": [
+    4,
+    32,
+    256
+  ],
+  "lambda_grid": [
+    0,
+    0.05,
+    0.2,
+    0.5,
+    1,
+    2
+  ],
+  "temperature_grid": [
+    0.01,
+    0.05,
+    0.2,
+    0.5,
+    1,
+    4,
+    16
+  ],
+  "learning_rate": 0.0001,
+  "weight_decay": 0.0,
+  "batch_size": 1,
+  "threads": 4,
+  "mean_long_tract": 6,
+  "mean_short_tract": 1.5,
+  "profiles": {
+    "local": {
+      "backend": "pretrained",
+      "sequence_length": 64,
+      "family_steps": 8,
+      "child_steps": 2,
+      "finetune_steps": [
+        0,
+        4
+      ],
+      "calibration_per_kind": 2,
+      "test_per_kind": 3,
+      "evaluation_batches": 2,
+      "max_characters": 120000
+    },
+    "smoke": {
+      "backend": "random_fixture",
+      "sequence_length": 16,
+      "family_steps": 1,
+      "child_steps": 1,
+      "finetune_steps": [
+        0,
+        1
+      ],
+      "calibration_per_kind": 1,
+      "test_per_kind": 1,
+      "evaluation_batches": 1,
+      "max_characters": 0
+    }
+  }
+}
