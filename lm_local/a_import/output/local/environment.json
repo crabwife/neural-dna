@@ -1,0 +1,18 @@
+{
+  "profile": "local",
+  "backend": "pretrained",
+  "model_id": "HuggingFaceTB/SmolLM2-135M",
+  "revision": "93efa2f097d58c2a74874c7e644dbc9b0cee75a2",
+  "seed": 63,
+  "blocks": 30,
+  "corpus_sha256": "86c4e6aa9db7c042ec79f339dcb96d42b0075e16b8fc2e86bf0ca57e2dc565ed",
+  "tokenizer_revision": "93efa2f097d58c2a74874c7e644dbc9b0cee75a2",
+  "packages": {
+    "torch": "2.8.0",
+    "transformers": "4.57.6",
+    "numpy": "2.0.2",
+    "pandas": "2.3.3",
+    "scipy": "1.13.1",
+    "safetensors": "0.7.0"
+  }
+}
